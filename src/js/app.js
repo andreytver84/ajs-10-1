@@ -19,6 +19,6 @@ export default class GameSavingLoader {
 
 GameSavingLoader.load().then((saving) => {
   return JSON.parse(saving)       
-}, (error) => {
+}).сatch((error) => {
   console.log(error)
 });
